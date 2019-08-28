@@ -17,7 +17,9 @@
         <javac destdir="build/classes" debug="true" srcdir="src/main/java">
             <classpath>
                 <path refid="compile.classpath"/>
-                <pathelement path='${env.WORKSPACE}/deploy-lib' />
+                <fileset dir="${env.WORKSPACE}/deploy-lib">
+                    <include name="*.jar"/>
+                </fileset>
             </classpath>
         </javac>
     </target>
