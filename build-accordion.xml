@@ -17,7 +17,7 @@
         <javac destdir="build/classes" debug="true" srcdir="src/main/java">
             <classpath>
                 <path refid="compile.classpath"/>
-                <pathelement path='${env.WORKSPACE}/accordion-lib' />
+                <pathelement path='${env.WORKSPACE}/deploy-lib' />
             </classpath>
         </javac>
     </target>
