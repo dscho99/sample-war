@@ -8,7 +8,7 @@ on:
 jobs:
   tagging:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.title, 'release-') 
 
     steps:
       - name: Checkout code
