@@ -1,2 +1,2 @@
 # sample-war
-build sample test
+build sample test 2
